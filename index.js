@@ -2,10 +2,14 @@ import express from "express";
 import * as path from "path";
 import {allAnimalsArray} from "./data/species.js"
 import primatesRouter from "./routes/primates_router.js";
+import * as dotenv from "dotenv";
 
 const app = express();
-const PORT =4000;
+
 const __dirname = path.resolve();
+
+dotenv.config();
+const PORT = process.env.PORT;
 
 app.set("views", path.join(__dirname,"views"));
 app.set("view engine","ejs");

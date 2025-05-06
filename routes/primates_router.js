@@ -5,8 +5,9 @@ const primatesRouter = express();
 
 primatesRouter.get("/",(req,res) => {
     res.render("pages/home.ejs",{   
-        body_class_name:"mammals",
+        body_class:"mammals",
         header_class:"home",
+        header_text:"primates",
         main_content_page : "primates",
         welcome_text : "Mammals",
         animal_names : primatesArray
@@ -17,7 +18,7 @@ primatesRouter.get("/echidna",(req,res) => {
     let echidna = mammalArray[0];
     res.render("pages/home.ejs",{
         welcome_text: "Mammals - Echidna",
-        body_class_name:"mammals",
+        body_class:"mammals",
         main_content_page : "animals",
         animal:echidna,
         animal_names : primatesArray
