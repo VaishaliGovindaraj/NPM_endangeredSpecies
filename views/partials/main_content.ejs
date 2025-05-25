@@ -8,7 +8,7 @@
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-").toLoerCase()%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p class="animal_name"><%= animal.name%></p>
                                  </div>
                          <% }) %>
