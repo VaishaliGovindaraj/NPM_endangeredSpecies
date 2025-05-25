@@ -1,59 +1,113 @@
 <% if(locals.main_content_page){ %>
     <% if(locals.main_content_page === "home") { %>
          <div class="welcome_description">
-                 <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                 <h2 class="welcome_text">Welcome to Guardians of the Wild  </h2>
                  <div class="zoo_description">
-                         <p>Australian Zoo is a vibrant wildlife park home to a diverse range of animals, birds, and reptiles. Visitors can explore lush habitats featuring iconic Australian species like kangaroos, koalas, and crocodiles. Exotic birds fill the air with color and song, while slithering snakes and majestic lizards showcase the country’s rich reptilian life. The zoo also houses rare and endangered species, promoting conservation and wildlife education. Interactive experiences, such as feeding sessions and wildlife shows, offer a close-up look at these fascinating creatures. A perfect destination for nature lovers and adventure seekers alike!</p>
+                         <p>Our planet is home to countless incredible creatures — but many are now on the brink of extinction. At Guardians of the Wild, we are dedicated to raising awareness, promoting conservation, and protecting the world’s most endangered species.From the dense rainforests to the depths of the ocean, these animals face threats from habitat destruction, climate change, poaching, and pollution. This platform brings you face-to-face with the species most at risk, offers the latest conservation updates, and shows how you can help turn the tide.🔍 Explore. Learn. Act.Discover detailed profiles of endangered animals.Learn about the causes and consequences of extinction.Support ongoing conservation efforts through education, donations, and advocacy.</p>
                  </div>
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
-                                         <p><%= animal.name%></p>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <p class="animal_name"><%= animal.name%></p>
                                  </div>
                          <% }) %>
                  </div>
          </div>
     <% } else if(locals.main_content_page === "primates") { %>
          <div class="welcome_description">
-                 <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <h2 class="welcome_text">Welcome to Guardians of the Wild  </h2>
                  <div class="zoo_description">
-                         <p>At our zoo, you’ll discover a fascinating world of Birds! 🦜 Birds are feathered creatures with beaks and wings, often known for their ability to fly. From colorful parrots to majestic eagles, they bring the skies to life. </p>
+                        <p>Primates: Our Closest Relatives in Peril
+                        Primates are among the most intelligent and emotionally complex animals on Earth — yet nearly 60% of them are threatened with extinction. From the majestic mountain gorillas of Central Africa to the tiny tarsiers of Southeast Asia, primates are losing their homes to deforestation and illegal trade.
+                        
+                        <strong><ol>🌿Key Threats:</ol></strong>
+                        
+                        <li>Logging and habitat loss</li>
+                        
+                        <li>Bushmeat hunting and illegal pet trade</li>
+                        
+                        <li>Disease transmission and climate change</li>
+                        
+                        <strong><ul>Spotlight Species:</ul></strong>
+                        
+                        <li>Mountain Gorilla (Critically Endangered)</li>
+                        
+                        <li>Sumatran Orangutan (Critically Endangered)</li>
+                        
+                        <li>Javan Rhinoceros (Endangered)</li>
+                        
+                        Help protect our evolutionary cousins by supporting ethical ecotourism, sustainable products, and habitat restoration.</p>
                  </div>
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p><%= animal.name%></p>
                                  </div>
                          <% }) %>
                  </div>
          </div>
-    <% } else if(locals.main_content_page === "mammals") { %>
+    <% } else if(locals.main_content_page === "big-cats") { %>
          <div class="welcome_description">
-                 <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <h2 class="welcome_text">Welcome to Guardians of the Wild  </h2>
                  <div class="zoo_description">
-                         <p>At our zoo, you’ll discover a fascinating world of Mammals!  🦁 Mammals are warm-blooded animals that have fur and give birth to live young. They include everything from playful monkeys to mighty lions. </p>
+                        <p>Big Cats: Icons of the Wild in Decline
+                                Big cats are the apex predators that keep ecosystems in balance — yet their populations are rapidly disappearing. Poaching, habitat fragmentation, and human-wildlife conflict are pushing these majestic animals toward extinction.
+
+<strong><ul>🦁 Species Under Threat:</ul></strong>
+
+<li>Amur Leopard: Fewer than 100 left in the wild</li>
+
+<li>Siberian Tiger: Victim of poaching and shrinking forests</li>
+
+<li>Cheetah: Losing habitat to agriculture and livestock
+</li>
+<strong>What You Can Do:</strong>
+Say no to illegal wildlife products
+
+Support anti-poaching patrols and sanctuaries
+
+Advocate for habitat corridors and conservation laws</p>
                  </div>
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
-                                         <p><%= animal.name%></p>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <p ><%= animal.name%></p>
                                  </div>
                          <% }) %>
                  </div>
          </div>
-    <% } else if(locals.main_content_page === "reptiles") { %>
+    <% } else if(locals.main_content_page === "marine-mammals") { %>
          <div class="welcome_description">
-                 <h2 class="welcome_text">Welcome to Australian Zoo </h2>
+                <h2 class="welcome_text">Welcome to Guardians of the Wild  </h2>
                  <div class="zoo_description">
-                         <p>At our zoo, you’ll discover a fascinating world of Reptiles!🐍 Reptiles are cold-blooded and covered in scales, often found slithering or basking in the sun. Discover snakes, turtles, and crocodiles as they showcase their unique survival skills! </p>
+                         <p>Marine Mammals: Ocean Giants in Danger
+From the playful dolphin to the mighty blue whale, marine mammals are essential to ocean ecosystems. But plastic pollution, ship strikes, and ocean noise are placing enormous stress on these magnificent creatures.
+
+🌊 Primary Threats:
+
+Plastic and chemical pollution
+
+Climate change and ocean acidification
+
+Commercial fishing bycatch
+
+Endangered Marine Mammals:
+
+Vaquita (Critically Endangered, fewer than 10 remain)
+
+North Atlantic Right Whale
+
+Hawaiian Monk Seal
+
+Protecting marine mammals means protecting our oceans. Support marine protected areas, reduce plastic use, and amplify ocean conservation efforts. </p>
                  </div>
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","-")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p><%= animal.name%></p>
                                  </div>
                          <% }) %>
@@ -63,7 +117,7 @@
                  <div class="main_content_description">       
                          <h1 class="header_title_description">Animal Name <%= animal.name %></h1>
                          <h2 class="group_name">Group name <%= animal.groupName %></h2>
-                         <img  class="main_content_image" src="/images/<%=animal.name.replace(" ","-")%>.jpg" alt="animal_image" width="250px" height="auto">
+                         <img  class="main_content_image" src="/images/<%=animal.name.replace(" ","_")%>.jpg" alt="animal_image" width="250px" height="auto">
                          <p class="main_detail"><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
                          <p class="main_detail"><strong>Food:</strong> <%= animal.food %></p>
                          <p class="main_detail"><strong>Description:</strong> <%= animal.description %></p>
