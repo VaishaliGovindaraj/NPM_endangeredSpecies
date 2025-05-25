@@ -117,7 +117,7 @@ Protecting marine mammals means protecting our oceans. Support marine protected 
                  <div class="main_content_description">       
                          <h1 class="header_title_description">Animal Name <%= animal.name %></h1>
                          <h2 class="group_name">Group name <%= animal.groupName %></h2>
-                         <img  class="main_content_image" src="/images/<%=animal.name.replace(" ","_")%>.jpg" alt="animal_image" width="250px" height="auto">
+                         <img  class="main_content_image" src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" alt="animal_image" width="250px" height="auto">
                          <p class="main_detail"><strong>Life Span:</strong> <%= animal.lifeSpan %> years</p>
                          <p class="main_detail"><strong>Food:</strong> <%= animal.food %></p>
                          <p class="main_detail"><strong>Description:</strong> <%= animal.description %></p>
