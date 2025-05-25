@@ -8,7 +8,7 @@
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase().toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p class="animal_name"><%= animal.name%></p>
                                  </div>
                          <% }) %>
@@ -42,7 +42,7 @@
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p><%= animal.name%></p>
                                  </div>
                          <% }) %>
@@ -73,7 +73,7 @@ Advocate for habitat corridors and conservation laws</p>
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p ><%= animal.name%></p>
                                  </div>
                          <% }) %>
@@ -107,7 +107,7 @@ Protecting marine mammals means protecting our oceans. Support marine protected 
                  <div class="animal_grid">
                          <% animal_names.forEach(animal => { %>
                                  <div class="grid_items">
-                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_")%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
+                                         <a href="/<%=animal.groupName%>/<%=animal.name.replace(" ","-")%>"><img src="/images/<%=animal.name.replace(" ","_").toLowerCase()%>.jpg" class="animal_image" alt="animal_image" width="300px" height="auto"></a>
                                          <p><%= animal.name%></p>
                                  </div>
                          <% }) %>
